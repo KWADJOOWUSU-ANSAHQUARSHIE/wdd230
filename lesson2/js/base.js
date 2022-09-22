@@ -1,46 +1,20 @@
-// Select the HTML element to manipulate
-const date1 = document.querySelector("#date1");
-// Try to complete the method with options
-try {
-	const options = {
-		weekday: "long",
-		day: "numeric",
-		month: "long",
-		year: "numeric"
-	};
-	date1.innerHTML = `Today is <span class="highlight">${new Date().toLocaleDateString("en-UK", options)}</span>!`;
-} catch (e) {
-	// alert("Error with code or your browser does not support Locale");
-};
+// Select elements from DOM
+const currentYearEl = document.querySelector("#currentYear");
+const lastUpdatedEl = document.querySelector("#lastUpdated span");
 
-// Long hand method ... building day and month names from built-in date methods.
+// Find current year
+const now = new Date();
+const currentYear = now.getFullYear();
 
-const daynames = [
-	"Sunday",
-	"Monday",
-	"Tuesday",
-	"Wednesday",
-	"Thursday",
-	"Friday",
-	"Saturday"
-];
-const months = [
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December"
-];
-const d = new Date();
-const dayName = daynames[d.getDay()];
-const monthName = months[d.getMonth()];
-const year = d.getFullYear();
-const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
-document.querySelector("#date2").textContent = fulldate;
+// Update DOM element
+currentYearEl.textContent = currentYear.toString();
+
+// Find Last Update Time
+const lastUpdate = new Date(document.lastModified);
+const formattedlastUpdate = new Intl.DateTimeFormat("en-GB", {
+  dateStyle: "short",
+  timeStyle: "medium",
+}).format(lastUpdate);
+
+// Update DOM element
+lastUpdatedEl.textContent = formattedlastUpdate;
