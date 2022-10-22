@@ -3,133 +3,144 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Chamber Home Page" />
-    <meta name="author" content="Kwadjo Owusu Ansah Quarshie" />
-    <title>Chamber of commerce</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/base.css" rel="stylesheet">
-    <link href="css/medium.css" rel="stylesheet">
-    <link href="css/large.css" rel="stylesheet">
-    <link rel="shortcut icon" href="boost.ico" type="image/boost" />
+    <link rel="shortcut icon" href="images/boost.ico">
+    <meta name="description" content="Chamber of Commerce">
+    <meta name="author" content="Kwadjo Owusu-Ansah Quarshie">
+    <title>Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/start.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <script defer src="js/start.js"></script>
     <script defer src="js/chill.js"></script>
+
 </head>
 
 <body>
-    <div id="message">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
-    <header>
-        <div class="logo">
-            <img src="images/logo.webp" alt="logo" />
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+            </div>
+            <button type="button" class="banner-button"><img src="images/banner.png" alt="button"></button>
         </div>
-        <h1>Chamber of Commerce</h1>
-        <h2>We're always open for Business</h2>
-        <p class="currentdate">Current Date</p>
+    </div>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.webp" alt="logo"></a>
+        </div>
+        <a href="#" id="hamburger">&#9776;</a>
         <nav>
-            <button id="hamburgerbttn"><span>&#9776;</span><span>X</span></button>
-            <ul id="primaryNav" class="open">
+            <ul>
                 <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
                 <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <p>
-            <div class="icon-bar">
-                <a href="https://web.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-            </p>
         </nav>
+        <section class="socials">
+            <a href="https://web.facebook.com/"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.webp" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/kwadjo-quarshie-b3057021a/"><img src="images/linkedin.webp"
+                    alt="linkedIn"></a>
+        </section>
     </header>
-
-    <main>
-        <picture class="heroSRC">
-            <source srcset="images/hero-small.jpg" media="(max-width: 200px)">
-            <source srcset="images/hero-medium.jpg" media="(max-width: 500px">
-            <source srcset="images/hero-large.jpg" media="(max-width: 800px">
-            <img src="images/hero.jpg" alt="hero-images">
-        </picture>
-        <h1>Home</h1>
-        <div class="wrapper">
-            <section class="hero">
-                <div class="heroContent">
-                    <p>Be part of this Chamber and let's win <b>Together</b></p>
-                    <button class="heroButtn">Join the chamber</button>
-                </div>
-            </section>
-            <section class="mainSection">
-                <h2>News</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde velit quibusdam, veniam voluptatem a
-                    corporis tempora ut error perferendis, sequi deleniti soluta nihil.
-                    Architecto deleniti quaerat nisi ad porro similique?</p>
-            </section>
-            <section class="mainSection">
-                <h2>Events</h2>
-                <ul>
-                    <li>Business exhibition</li>
-                    <li>Conference of business heads</li>
-                    <li>How to grow your business</li>
-                    <li>Ways of acquiring the skill of diligence</li>
-                    <li>How to communicate with team appropriately </li>
-                </ul>
-            </section>
-           <section id="weather">
+    <section class="date"></section>
+    <main class="home">
+        <h1>Seattle Chamber of Commerce</h1>
+        <section id="hero">
+            <picture>
+                <source media="(min-width: 1500px)" srcset="images/1500.webp">
+                <source media="(min-width: 1200px)" srcset="images/1200.webp">
+                <source media="(min-width: 840px)" srcset="images/840.webp">
+                <source media="(min-width: 700px)" srcset="images/700.webp">
+                <img src="images/1500.webp" alt="hero">
+            </picture>
+        </section>
+        <section id="event">
+            <h2>Events</h2>
+            <hr>
+            <p>October 10: Chamber Reunion Day</p>
+            <p>November 19: Visiting of Branches</p>
+            <p>December 25: End of year review</p>
+        </section>
+        <section id="weather">
             <h2>Weather</h2>
-            <figure><img src="https://openweathermap.org/img/w/04n.png" alt="weather image" id="weathericon" /> 
-            <figcaption>Today's Weather</figcaption></figure>
+            <figure><img src="https://openweathermap.org/img/w/04n.png" alt="weather image" id="weathericon" />
+                <figcaption>Today's Weather</figcaption>
+            </figure>
             <p>Current Temperature in Accra, Ghana is <span id="temp"></span> &deg;F</p>
             <p>Current Wind Speed <span id="speed"></span>mph</p>
             <p id="chill">message</p>
-    </section>
-            <section class="mainSection">
-                <h2>Want to Join ?</h2>
-                <figure>
-                    <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-                </figure>
-            </section>
-            <section class="mainSection">
-                <h2>Spotlight 1</h2>
-                <figure>
-                    <img src="images/sportlight.webp" alt="spotlight_1">
-                    <p>Figure out the best team to work with<b> ! </b></p>
-                </figure>
-            </section>
-            <section class="mainSection">
-                <h2>Spotlight 2</h2>
-                <figure>
-                    <img src="images/sportlight_2.webp" alt="spotlight_2">
-                    <p>Without fear we can progress really quick</p>
-                    <p>Kindly email us with your opinions <a
-                            href="mailto:kushbastero@gmail.com">kushbastero@gmail.com</a></p>
-                </figure>
-            </section>
-        </div>
+        </section>
+        <section id="news">
+            <h2>News</h2>
+            <hr>
+            <h3>Ghana-Web</h3>
+            <p>Top trending news in Ghana and world wide<br><a
+                    href="https://www.ghanaweb.com/GhanaHomePage/entertainment/">Read More...</a>
+            </p>
+            <hr>
+            <h3>Google-News</h3>
+            <p>The new Google News has a fresh look, brand-new briefing and customised topics !<br> <a
+                    href="https://news.google.com/topstories?hl=en-GH&gl=GH&ceid=GH:en">Read more...</a>
+            </p>
+            <hr>
+            <h3>Top Issues</h3>
+            <p>Trending News</p>
+        </section>
+        <section id="join">
+            <h2>Join Us</h2>
+            <p>Do you mind becoming a member? Are you comfortable working with our team? We're waiting for you, make a
+                quick decision now !</p>
+            <p>Easy steps to be part of our crew !</p>
+            <a href="#"><button>Join Us</button></a>
+        </section>
+        <section id="spotlights">
+            <h2>Spotlights 1</h2>
+            <div id="spot1">
+                <a href="#">
+                    <h3>Choices</h3>
+                </a>
+                <img src="images/spotlight1.webp" alt="spotlight1">
+            </div>
+            <div id="spot2">
+                <a href="#">
+                    <h3>Make Difference <br> You deserve better,</h3>
+                </a>
+                <img src="images/spotlight2.webp" alt="spotlight2">
+            </div>
+            <div id="spot3">
+                <a href="#">
+                    <h3>Be bold to take the lead !</h3>
+                </a>
+                <img src="images/spotlight3.webp" alt="spotlight3">
+            </div>
+        </section>
     </main>
-
     <footer>
-        <div class="footerContainer">
-            <img src="images/logo.webp" alt="logo" />
-            <div class="address">
-                Chamber of Commerce
-                <br>Accra West<br>
-                <br>Region: Greater Accra<br>
+        <section id="about">
+            <img src="images/logo.webp" alt="Chamber of Commerce Logo">
+            <div id="address">
+                <h3>Visit Us</h3>
+                <p>Ghana</p>
+                <p>Eastern Region (Koforidua)</p>
             </div>
-            <div class="contactEmail">
-                <a href="mailto:kushbastero@gmail.com">kushbastero@gmail.com</a>
-                <br>Tel: +233240560411<br>
+            <div id="contact">
+                <h3>Contact Us</h3>
+                <p><a href="mailto:kushbastero@gmail.com">kushbastero@gmail.com</a></p>
+                <p><a href="tel:+233240560411">Phone</a></p>
             </div>
-            <div class="map">
-                <a href="#">Map</a>
-            </div>
-        </div>
-        <p> &copy;<span id="current_year"></span> | Kwadjo Owusu Ansah Quarshie | <BYU-IDAHO></BYU-IDAHO> WDD230 </p>
-        <p id="lastmod"></p>
-
+        </section>
+        <section id="copyright">
+            <p>&copy; <span id="copyrightYear"></span> Chamber of Commerce | Kwadjo Owusu Ansah Quarshie | WDD230
+                Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p><span id="lastVisited"></span></p>
+        </section>
     </footer>
 </body>
 
