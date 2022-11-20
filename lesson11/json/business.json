@@ -1,0 +1,160 @@
+{
+    "business": [
+        {
+            "name": "SARP",
+            "type": "IT Consultant",
+            "location": {
+                "address1": "Accra Ghana",
+                "city": "Central",
+                "state": "Ga East",
+                "zip_code": "GA107"
+            },
+            "phone": "+233-240-560-411",
+            "website": "https://www.sarpitc.com/",
+            "logo": "images/sector-1.webp"
+        },
+        {
+            "name": "Techmaaxx International Limited", 
+            "type": "ICT and IoT Technology Solutions",
+            "location": {
+                "address1": "Adabraka",
+                "city": "Accra",
+                "state": "Ga South",
+                "zip_code": "GA107"
+            },
+            "phone": "+233-240-560-411",
+            "website": "https://www.techmaaxxghana.com/",
+            "logo": "images/sector-2.webp"
+        },
+        {
+            "name": "Web-Soft Solution",
+            "type": "Credibility + Success",
+            "location": {
+                "address1": "Tema Community 18, Adji Eden Tree",
+                "city": "Accra",
+                "state": "Ga North",
+                "zip_code": "GA107"
+            },
+            "phone": "+233-240-560-411",
+            "website": "https://www.websoftghana.com/",
+            "logo": "images/sector-3.webp"
+        },
+        {
+            "name": "Billscom Consult",
+            "type": "IT Consulting Company",
+            "location": {
+                "address1": "Fermion Street",
+                "city": "Accra",
+                "state": "Ga East",
+                "zip_code": "GA107"
+            },
+            "phone": "+233-501-204-567",
+            "website": "https://billscomconsult.com/",
+            "logo": "images/sector-4.webp"
+        },
+        {
+            "name": "Zelus",
+            "type": "Digital Service Firm",
+            "location": {
+                "address1": "Koforidua Adjacent KTU University",
+                "city": "Accra",
+                "state": "Ga East",
+                "zip_code": "GA107"
+            },
+            "phone": "+233-247-040-028",
+            "website": "https://zelustechnologiesltd.com/",
+            "logo": "images/sector-5.png"
+        },
+        {
+            "name": "M-SOFT",
+            "type": "Web Hosting",
+            "location": {
+                "address1": "Bono East",
+                "city": "Accra",
+                "state": "Techiman",
+                "zip_code": "E-104/3 Tako"
+            },
+            "phone": "+233-550-258-535",
+            "website": "https://msoftghana.com/en/",
+            "logo": "images/sector-6.png"
+        },
+        {
+            "name": "Shrin-Q",
+            "type": "Enterprise Software Product",
+            "location": {
+                "address1": "East Legon",
+                "city": "Accra",
+                "state": "Ga South",
+                "zip_code": "P.O.Box 300335, KIA "
+            },
+            "phone": "+233-203-005-507",
+            "website": "https://shrinqghana.com/",
+            "logo": "images/sector-7.svg"
+        },
+        {
+            "name": "Rancard",
+            "type": "Increase Reach & Sales",
+            "location": {
+                "address1": "Labadi Beach Resort",
+                "city": "Accra",
+                "state": "Ga North",
+                "zip_code": "GA107"
+            },
+            "phone": "+233-240-560-411",
+            "website": "https://www.rancard.com/",
+            "logo": "images/sector-8.svg"
+        },
+        {
+            "name": "Tech-By-Sparks",
+            "type": "Tech News",
+            "location": {
+                "address1": "Estate Labadi",
+                "city": "Greater Accra",
+                "state": "Central",
+                "zip_code": "G45/7 Giffard Close"
+            },
+            "phone": "+233-244-127-040",
+            "website": "https://techbysparks.com/",
+            "logo": "images/sector-9.png"
+        },
+        {
+            "name": "Adaptive Computer Solutions",
+            "type": "software Development Outsourcing",
+            "location": {
+                "address1": "14",
+                "city": "Accra",
+                "state": "Ajacent WW Homes, Haasto",
+                "zip_code": "Hse # 4"
+            },
+            "phone": "+233-303-937-079",
+            "website": "https://www.acsint.io/",
+            "logo": "images/sector-10.png"
+        },
+        {
+            "name": "Code-Web",
+            "type": "Technology Innovation",
+            "location": {
+                "address1": "Accra - Ghana (West Africa)",
+                "city": "Nii Adote Obour",
+                "state": "Aboloo Bridge",
+                "zip_code": "Banana Inn"
+            },
+            "phone": "+233-030-233-6324",
+            "website": "http://codewebltd.com/",
+            "logo": "images/sector-11.png"
+        },
+        {
+            "name": "Sauftline Technologies Limited",
+            "type": "Limited is a Software and Database Management Company",
+            "location": {
+                "address1": "Teshie Nungua Estates",
+                "city": "Accra",
+                "state": "Regional Maritime University College",
+                "zip_code": "P.O.Box 952"
+            },
+            "phone": "+233-055-131-9927",
+            "website": "https://sauftline-technologies-limited.business.site/",
+            "logo": "images/sector-12.webp"
+        }
+    ]
+}
