@@ -1,0 +1,43 @@
+@media screen and (min-width: 60rem) {
+  /*--------------------- Semantic Styles ---------------------*/
+
+  /*--------------------- Header Styles ---------------------*/
+
+  /*--------------------- Nav Styles ---------------------*/
+  nav ul li a  {
+    font-size: 1.2em;
+  }
+
+  /*--------------------- Main Styles ---------------------*/
+  main {
+    width: 60%;
+    margin: 0 auto;
+  }
+  /*--------------------- Footer Styles ---------------------*/
+  footer {
+    flex-direction: row;
+  }
+
+  /*--------------------- Class Styles ---------------------*/
+  .logo {
+    width: 150px;
+  }
+
+  .row {
+    width: 90%;
+  }
+
+  .rowImg {
+    width: 25%;
+  }
+
+  .rowContent {
+    width: 75%;
+  }
+
+  /*--------------------- ID Styles ---------------------*/
+  #primaryNav {
+    width: 60%;
+  }
+
+}
