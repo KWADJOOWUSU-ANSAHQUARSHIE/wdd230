@@ -59,7 +59,7 @@ const links = [
     },
     {
       label: "Final-Challenge",
-      url: "/final/index.html"
+      url: "https://kwadjoowusu-ansahquarshie.github.io/wdd230/wdd330/final/index.html"
     },
     {
       label: "Sleep-Outside",
