@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Searcher</title>
+    <meta name="description" content="Home Page-Weather Searcher">
+    <meta name="author" content="Kwadjo Owusu-Ansah Quarshie">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- CSS files -->
+    <link rel="stylesheet" href="/final/style/normalize.css">
+    <link rel="stylesheet" href="/final/style/small.css">
+    <link rel="stylesheet" href="/final/style/large.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="/final/images/logo.jpeg" alt="Weather Searcher logo" width="100rem">
+        <h1>Weather Searcher</h1>
+    </header>
+
+    <main class="main">
+        <section class="location">
+            <h3>To access weather using your location click here:</h3>
+            <button class="user-location" id="getLocationBtn">Access My Current Location</button><span id="city"></span>
+            <h3>or</h3>
+            <!--Search Bar-->
+            <section class="search">
+                <form action="" class="search-form">
+                    <input type="text" placeholder="Enter City.." id="search-input">
+                    <button type="submit" id="search"><i class="fa fa-search"></i></button>
+                </form>
+                <ul id="suggest-list"></ul>
+            </section>
+        </section>
+        <section>
+            <h3>Please select Celcius or Fahrenheit:</3>
+                <form action="" class="degree-type" name="degreeType">
+                    <div class="degree-div">
+                        <label for="celcius">Celcius</label>
+                        <input type="checkbox" class="checkbox" name="celcius" id="radio-cels" value="metric">
+                    </div>
+                    <div class="degree-div">
+                        <label for="fahrenheit">Fahrenheit</label>
+                        <input type="checkbox" class="checkbox" name="fahrenheit" id="radio-fahr" value="imperial">
+                    </div>
+                </form>
+        </section>
+        <section id="today-summary">
+            <h2><u>Today's Weather Summary</u></h2>
+            <div class="summary-div" id="weather-summary"></div>
+        </section>
+        <section id="five-day-forecast">
+            <h2><u>Extended Forecast</u></h2>
+            <div class="forecast-div" id="five-day-forecast-sections"></div>
+        </section>
+        <section class="maps">
+            <h2><u>Weather Map</u></h2>
+            <div class="maps-div">
+                <iframe
+                    src="https://openweathermap.org/weathermap?basemap=map&cities=false&layer=precipitation&lat=30&lon=-20&zoom=3"
+                    title="Open Weather Map - Interactive" height="400" width="600"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> | Weather On The Go</p>
+        <p>Final Challenge - Kwadjo Owusu-Ansah Quarshie</p>
+        <p>WDD330 - Web Frontend Development ||</p>
+        <p><a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
+        <p><span id="date-string"></span></p>
+    </footer>
+
+   <script src="/final/script/footer.js"></script>
+    <script src="/final/script/weather.mjs" type="module"></script>
+    <script src="/final/script/map.mjs" type="module"></script>
+    <script src="/final/script/seek.mjs" type="module"></script>
+    <script src="/final/script/cast.mjs" type="module"></script>
+    <script src="/final/script/location.mjs" type="module"></script>
+    <script src="/final/script/API.mjs" type="module"></script>
+    <script src="/final/script/center.mjs" type="module"></script>
+    <script src="/final/script/type.mjs" type="module"></script>
+</body>
+
+</html>
